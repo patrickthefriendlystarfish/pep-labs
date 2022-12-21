@@ -1,3 +1,4 @@
+import javax.lang.model.util.ElementScanner6;
 
 public class GreaterOrLesser {
     /**
@@ -10,6 +11,17 @@ public class GreaterOrLesser {
      *          If neither is true, return "Equal". This problem is case-sensitive!
      */
     public String decide(int a, int b){
-        return "Equal";
+        if(a < b)
+        {
+            return "Lesser";
+        }
+        else if(a > b)
+        {
+            return "Greater";
+        }
+        else
+        {
+            return "Equal";
+        }
     }
 }

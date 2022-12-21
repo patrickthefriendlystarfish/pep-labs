@@ -10,15 +10,9 @@ public class Add {
      * @param b second number to be added.
      * @return the sum of a and b.
      */
-    public int addNumbers(int... num)
+    public int addNumbers(int a, int b)
     {
-        int total = 0;
-        for(int i = 0; i < num.length; i++)
-        {
-            total += num[i];
-        }
-
-        return total;
+        return a + b;
        
     }
 }

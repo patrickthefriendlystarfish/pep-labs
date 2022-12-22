@@ -24,5 +24,10 @@ public class SetAllArrayElements {
      */
     public void set(int[] arr, int n){
 
+        for(int count = 0; count < arr.length; count++)
+        {
+            arr[count] = n;
+        }
+
     }
 }

@@ -9,7 +9,7 @@ public class CustomExceptionThrower {
      * I recommend looking at the test case for a good example of try/catch block usage, as well.
      */
     public void throwCustomException() throws CustomException{
-        throw new CustomException();
+        throw new CustomException("This aint good chief!");
     }
 
 }

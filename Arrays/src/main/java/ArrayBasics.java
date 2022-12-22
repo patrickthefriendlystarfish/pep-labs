@@ -33,6 +33,7 @@ public class ArrayBasics {
             if(count == n)
             {
                 value = arr[n];
+                System.out.println("Nth element of array" + value);
             }
        }
 
@@ -50,6 +51,7 @@ public class ArrayBasics {
     public void setNthElementOfArray(int[] arr, int n, int val){
 
         arr[n] = val;
+        System.out.println("value of Nth element:" + val);
 
     }
 
@@ -62,6 +64,7 @@ public class ArrayBasics {
         int numArr[];
 
         numArr = new int[n];
+        System.out.println("Length of new array" + numArr.length);
 
        return numArr;
     }

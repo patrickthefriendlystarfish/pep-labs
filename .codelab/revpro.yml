@@ -40,12 +40,12 @@
     :git_user_name: patrickthefriendlystarfish
 :progress:
   :count_labs_total: 96
-  :count_labs_passed: 0
+  :count_labs_passed: 1
   :count_tests_total: 361
-  :count_tests_passed: 2
+  :count_tests_passed: 4
 :progress_test:
   :count_tests_total: 361
-  :count_tests_passed: 2
+  :count_tests_passed: 4
   Start:
     :Week: 1
     :Order: 1
@@ -210,11 +210,11 @@
     :Order: 5
     :Type: lab
     :count_tests: 4
-    :count_tests_passed: 2
+    :count_tests_passed: 4
     :tests:
       whileLoopTest1: 1
-      whileLoopTest2: 0
-      whileLoopTest3: 0
+      whileLoopTest2: 1
+      whileLoopTest3: 1
       whileLoopTest4: 1
   ForLoop:
     :Week: 2

@@ -31,7 +31,7 @@ public class ReturnArrayContents {
         String resultString = "";
          for(int count = 0; count < nums.length; count++)
          {
-             resultString += nums[count];
+             resultString += (nums[count] + " ");
          }
 
          return resultString;

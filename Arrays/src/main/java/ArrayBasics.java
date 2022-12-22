@@ -27,17 +27,7 @@ public class ArrayBasics {
      * @return the element at index n of arr.
      */
     public int getNthElementOfArray(int[] arr, int n){
-        int value = 0;
-       for(int count = 0; count <= n; count++)
-       {
-            if(count == n)
-            {
-                value = arr[n];
-                System.out.println("Nth element of array" + value);
-            }
-       }
-
-       return value;
+            return arr[n];
     }
 
     /**

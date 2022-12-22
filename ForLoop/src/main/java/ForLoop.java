@@ -47,6 +47,8 @@ public class ForLoop {
             buildingString += (i + " ");
         }
 
+        System.out.println(buildingString);
+
         return buildingString;
     }
 }

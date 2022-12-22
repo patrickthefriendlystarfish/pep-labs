@@ -44,7 +44,7 @@ public class ForLoop {
 
         for(int i = 0; i < end; i++)
         {
-            buildingString += (i + " ");
+            buildingString += i + " ";
         }
 
         return buildingString;

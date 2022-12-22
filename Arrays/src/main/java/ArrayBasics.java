@@ -15,7 +15,7 @@ public class ArrayBasics {
      * @return the length of arr.
      */
     public int getLengthOfArray(int[] arr){
-        return 0;
+       return  arr.length;
     }
 
 
@@ -27,7 +27,16 @@ public class ArrayBasics {
      * @return the element at index n of arr.
      */
     public int getNthElementOfArray(int[] arr, int n){
-        return 0;
+        int value = 0;
+       for(int count = 0; count <= n; count++)
+       {
+            if(count == n)
+            {
+                value = arr[n];
+            }
+       }
+
+       return value;
     }
 
     /**
@@ -40,6 +49,8 @@ public class ArrayBasics {
      */
     public void setNthElementOfArray(int[] arr, int n, int val){
 
+        arr[n] = val;
+
     }
 
     /**
@@ -47,6 +58,11 @@ public class ArrayBasics {
      * @return a new int array that can contain n elements.
      */
     public int[] returnNewArraySizeN(int n){
-        return null;
+
+        int numArr[];
+
+        numArr = new int[n];
+
+       return numArr;
     }
 }

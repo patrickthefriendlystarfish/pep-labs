@@ -73,9 +73,16 @@ public class CreateATable {
             System.out.println("problem1: " + e.getMessage() + '\n');
         }
 
-        try{
-            
+        try
+        {
+            String statement = "CREATE TABLE song (title VARCHAR(100), artist VARCHAR(100))";
+            Statement
         }
+        finally
+        {
+
+        }
+       
     }
 
 }

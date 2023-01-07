@@ -34,7 +34,12 @@ public class BankService {
      * @param amount the amount to be withdrawn.
      */
     public void withdraw(double amount){
-        this.balance -= amount;
+        double leftOver = this.balance - amount;
+
+        if(leftOver > 0)
+        {
+            this.balance -= amount;
+        }
     }
 
     /**

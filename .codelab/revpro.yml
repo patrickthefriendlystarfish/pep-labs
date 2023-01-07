@@ -40,12 +40,12 @@
     :git_user_name: patrickthefriendlystarfish
 :progress:
   :count_labs_total: 96
-  :count_labs_passed: 0
+  :count_labs_passed: 1
   :count_tests_total: 361
-  :count_tests_passed: 6
+  :count_tests_passed: 7
 :progress_test:
   :count_tests_total: 361
-  :count_tests_passed: 6
+  :count_tests_passed: 7
   Start:
     :Week: 1
     :Order: 1
@@ -376,7 +376,7 @@
     :Order: 7
     :Type: lab
     :count_tests: 7
-    :count_tests_passed: 6
+    :count_tests_passed: 7
     :tests:
       createQueueTest: 1
       getSizeTest1: 1
@@ -388,9 +388,14 @@
       createMapTest: 0
       addKeyValuePairTest1: 0
       addKeyValuePairTest2: 0
-      getSizeTest2: 0
+      getSizeTest2: 1
       overwriteValueTest1: 0
       removeKeyValuePairTest1: 0
+      addToTopOfStackTest1: 1
+      removeFromTopOfStackTest1: 1
+      removeFromTopOfStackTest2: 1
+      createStackTest: 1
+      getTopOfStackWithoutRemovingTest1: 1
   Stack:
     :Week: 3
     :Order: 8

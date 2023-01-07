@@ -60,7 +60,6 @@ public class QueueExercise {
      * @return the next String due to be removed (polled) from the Queue<String> (the oldest item in the queue.)
      */
     public String removeFromStartOfQueue(Queue<String> queue){
-        System.out.println(queue.peek());
        return queue.remove();
         
     }

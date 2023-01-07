@@ -99,10 +99,13 @@ public class QueueExerciseTest {
             qe.addToEndOfQueue(queue, "Sally");
             qe.addToEndOfQueue(queue, "Kate");
             String name = qe.removeFromStartOfQueue(queue);
+            System.out.println(name);
             Assert.assertEquals(name, "Jim");
             name = qe.removeFromStartOfQueue(queue);
+            System.out.println(name);
             Assert.assertEquals(name, "Sally");
             name = qe.removeFromStartOfQueue(queue);
+            System.out.println(name);
             Assert.assertEquals(name, "Kate");
             Assert.assertEquals(qe.getSize(queue), 0);
         }

@@ -450,8 +450,8 @@
       bankServiceTest2: 1
       bankServiceTest3: 1
       bankServiceTest4: 1
-      bankServiceTest5: 0
-      bankServiceTest6: 1
+      bankServiceTest5: 1
+      bankServiceTest6: 0
   StaticKeyword:
     :Week: 4
     :Order: 1

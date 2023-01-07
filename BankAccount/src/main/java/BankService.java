@@ -36,7 +36,7 @@ public class BankService {
     public void withdraw(double amount){
         double leftOver = this.balance - amount;
 
-        if(leftOver > 0)
+        if(leftOver >= 0)
         {
             this.balance -= amount;
         }

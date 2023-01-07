@@ -40,12 +40,12 @@
     :git_user_name: patrickthefriendlystarfish
 :progress:
   :count_labs_total: 96
-  :count_labs_passed: 1
+  :count_labs_passed: 0
   :count_tests_total: 361
-  :count_tests_passed: 7
+  :count_tests_passed: 6
 :progress_test:
   :count_tests_total: 361
-  :count_tests_passed: 7
+  :count_tests_passed: 6
   Start:
     :Week: 1
     :Order: 1
@@ -376,7 +376,7 @@
     :Order: 7
     :Type: lab
     :count_tests: 7
-    :count_tests_passed: 7
+    :count_tests_passed: 6
     :tests:
       createQueueTest: 1
       getSizeTest1: 1

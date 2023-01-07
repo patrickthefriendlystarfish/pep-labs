@@ -33,5 +33,7 @@ public class GetMax {
             }
 
         }
+
+        return arr[len-1];
     }
 }

@@ -14,6 +14,6 @@ public class ArraySum {
             sum += arr[count];
         }
 
-        return 0;
+        return sum;
     }
 }

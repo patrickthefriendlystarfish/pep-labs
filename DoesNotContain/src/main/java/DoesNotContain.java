@@ -18,12 +18,12 @@ public class DoesNotContain {
         {
              if(arr[count] == target)
              {
-                return true;
+                return false;
              }
 
         }
 
-        return false;
+        return true;
         
         
     }

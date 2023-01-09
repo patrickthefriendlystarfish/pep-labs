@@ -37,10 +37,14 @@ public class InsertARecord {
      * */
     public boolean problem1(){
         String sql = FileUtil.parseSQLFile("problem1.sql");
+        String statement = "INSERT INTO table(title VARCHAR(100), artist varchar(100)) VALUES()";
         try {
             Connection connection = ConnectionUtil.getConnection();
             Statement s = connection.createStatement();
+            Statement stmt = connection.createStatement();
+            stmt.executeUpdate(statement);
             return s.executeUpdate(sql) != 0;
+            
 
         } catch (SQLException e) {
             System.out.println("problem1: " + e.getMessage() + '\n');

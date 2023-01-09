@@ -35,8 +35,7 @@ public class DropATable {
             Connection connection = ConnectionUtil.getConnection();
             Statement s = connection.createStatement();
             s.executeUpdate(sql);
-            Statement stmt = connection.createStatement();
-            stmt.execute(statement);
+           
 
 
         } catch (SQLException e) {

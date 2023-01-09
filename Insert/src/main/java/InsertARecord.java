@@ -54,7 +54,7 @@ public class InsertARecord {
             {   
                 String statement = "INSERT INTO song (title, data) VALUES" + "(" + titleData[count] + " ," + artistData[count] + ")";
                 Statement stmt = connection.createStatement();
-                stmt.executeUpdate(statement);
+                stmt.execute(statement);
             }
 
 

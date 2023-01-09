@@ -1,8 +1,6 @@
 
 import Util.ConnectionUtil;
 import Util.FileUtil;
-import java.util.ArrayList;
-import java.util.Scanner;
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -39,9 +37,10 @@ public class InsertARecord {
      * */
     public boolean problem1(){
         String sql = FileUtil.parseSQLFile("problem1.sql");
+        //These are parallel arrays that im going to use a for loop to loop through and enter into the database
         String[] titleData = {"Vogue", "Wonderwall", "Jump", "Bitter Sweet Symphony", "Good Vibrations"};
         
-        String[] artistData = {"Madonna", "Oasis", "Kriss Kross", "The Verve", "Marky Mark and the Funky Bunch"}
+        String[] artistData = {"Madonna", "Oasis", "Kriss Kross", "The Verve", "Marky Mark and the Funky Bunch"};
         
         
 
@@ -49,7 +48,7 @@ public class InsertARecord {
         try {
             Connection connection = ConnectionUtil.getConnection();
             Statement s = connection.createStatement();
-
+            //Looping through and inserting the corresponding values into the database
             for(int count = 0; count < titleData.length; count++)
             {   
                 String statement = "INSERT INTO song (title, data) VALUES" + "(" + titleData[count] + " ," + artistData[count] + ")";

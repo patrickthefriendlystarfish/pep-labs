@@ -1,10 +1,11 @@
 
 import Util.ConnectionUtil;
 import Util.FileUtil;
-
+import java.util.ArrayList;
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.sql.Statement;
+
 
 /**
  * SQL sublanguage: DML (Data Manipulation Language)
@@ -37,6 +38,9 @@ public class InsertARecord {
      * */
     public boolean problem1(){
         String sql = FileUtil.parseSQLFile("problem1.sql");
+        
+
+        
         try {
             Connection connection = ConnectionUtil.getConnection();
             Statement s = connection.createStatement();

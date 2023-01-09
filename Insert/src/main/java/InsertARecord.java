@@ -51,13 +51,11 @@ public class InsertARecord {
             //Looping through and inserting the corresponding values into the database
             for(int count = 0; count < titleData.length; count++)
             {   
-                String statement = "INSERT INTO song (title, data) VALUES" + "(" +"\'"+  titleData[count]  +"\'"+" ,"  +"\'"+ artistData[count]  +"\'"+ ")";
+                String statement = "INSERT INTO song (title, artist) VALUES" + "(" +"\'"+  titleData[count]  +"\'"+" ,"  +"\'"+ artistData[count]  +"\'"+ ")";
                 System.out.println(statement);
                 Statement stmt = connection.createStatement();
-                stmt.execute(statement);
+                stmt.executeUpdate(statement);
             }
-
-
 
             return s.executeUpdate(sql) != 0;
 

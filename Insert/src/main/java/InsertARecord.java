@@ -2,6 +2,7 @@
 import Util.ConnectionUtil;
 import Util.FileUtil;
 import java.util.ArrayList;
+import java.util.Scanner;
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -38,13 +39,29 @@ public class InsertARecord {
      * */
     public boolean problem1(){
         String sql = FileUtil.parseSQLFile("problem1.sql");
+        String[] titleData = {"Vogue", "Wonderwall", "Jump", "Bitter Sweet Symphony", "Good Vibrations"};
+        
+        String[] artistData = {"Madonna", "Oasis", "Kriss Kross", "The Verve", "Marky Mark and the Funky Bunch"}
+        
         
 
         
         try {
             Connection connection = ConnectionUtil.getConnection();
             Statement s = connection.createStatement();
+
+            for(int count = 0; count < titleData.length; count++)
+            {   
+                String statement = "INSERT INTO song (title, data) VALUES" + "(" + titleData[count] + " ," + artistData[count] + ")";
+                Statement stmt = connection.createStatement();
+                stmt.executeUpdate(statement);
+            }
+
+
+
             return s.executeUpdate(sql) != 0;
+
+            
 
         } catch (SQLException e) {
             System.out.println("problem1: " + e.getMessage() + '\n');

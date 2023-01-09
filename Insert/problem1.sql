@@ -1,1 +1,1 @@
-INSERT INTO (title, artist) VALUES (@parameter, @parameter);
+INSERT INTO (title, artist) VALUES (?,?);

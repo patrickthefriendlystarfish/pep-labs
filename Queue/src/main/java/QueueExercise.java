@@ -33,7 +33,7 @@ public class QueueExercise {
      * Stack behavior.
      */
     public Queue<String> createQueue(){
-        Queue<String> v = ;
+        Queue<String> v = new ArrayDeque<String>();
         return v;
     }
 

@@ -3,6 +3,9 @@
  */
 
 import java.util.Queue;
+
+import kotlin.collections.ArrayDeque;
+
 import java.util.PriorityQueue;
 
 /**
@@ -30,7 +33,7 @@ public class QueueExercise {
      * Stack behavior.
      */
     public Queue<String> createQueue(){
-        Queue<String> v = new PriorityQueue<String>();
+        Queue<String> v = ;
         return v;
     }
 
@@ -60,7 +63,7 @@ public class QueueExercise {
      * @return the next String due to be removed (polled) from the Queue<String> (the oldest item in the queue.)
      */
     public String removeFromStartOfQueue(Queue<String> queue){
-       return queue.poll();
+        return queue.remove();
         
     }
 

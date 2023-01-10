@@ -4,9 +4,13 @@
 
 import java.util.Queue;
 
-import kotlin.collections.ArrayDeque;
+import java.util.ArrayDeque;
 
 import java.util.PriorityQueue;
+
+import java.util.Deque;
+
+
 
 /**
  * Queues are FIFO - first in, first out, like a checkout line. They are used in algorithms where it is needed to keep
@@ -33,7 +37,8 @@ public class QueueExercise {
      * Stack behavior.
      */
     public Queue<String> createQueue(){
-        Queue<String> v = new ArrayDeque<String>();
+        Deque<String> v = new ArrayDeque<String>();
+
         return v;
     }
 

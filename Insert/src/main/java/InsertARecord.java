@@ -37,10 +37,10 @@ public class InsertARecord {
      * */
     public boolean problem1(){
         String sql = FileUtil.parseSQLFile("problem1.sql");
-      
+    
+        
         
 
-        
         try {
             Connection connection = ConnectionUtil.getConnection();
             Statement s = connection.createStatement();

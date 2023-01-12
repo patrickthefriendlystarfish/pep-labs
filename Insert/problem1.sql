@@ -1,1 +1,1 @@
-INSERT INTO (title, artist) VALUES ('Anti-Hero', 'Taylor Swift');
+INSERT INTO song (title, artist) VALUES ('Anti-Hero', 'Taylor Swift');

@@ -1,1 +1,1 @@
-SELECT COUNT(last_name) AS Num_occurence FROM employees  HAVING last_name = 'Smith';
+SELECT COUNT(last_name) FROM employees  HAVING last_name = 'Smith';

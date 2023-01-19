@@ -1,0 +1,1 @@
+SELECT COUNT(last_name) FROM employees having last_name = "Smith";

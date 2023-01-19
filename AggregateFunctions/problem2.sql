@@ -1,1 +1,1 @@
-SELECT COUNT(last_name) FROM employees  HAVING last_name = 'Smith';
+SELECT COUNT(last_name) from employee having last_name = 'Smith'

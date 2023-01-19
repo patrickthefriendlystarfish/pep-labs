@@ -1,1 +1,1 @@
-SELECT COUNT(artists) AS num_songs FROM SONGS GROUP BY artist;
+SELECT COUNT(artist) AS num_songs FROM SONGS GROUP BY artist;

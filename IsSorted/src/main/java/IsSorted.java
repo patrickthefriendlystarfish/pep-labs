@@ -12,7 +12,7 @@ public class IsSorted {
             int currentIndex = arr[count];
             int nextIndex = arr[count + 1];
 
-           if(currentIndex > nextIndex)
+           if((currentIndex > nextIndex) && count <= arr.length)
            {
 
                 return false;

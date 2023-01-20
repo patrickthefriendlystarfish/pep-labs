@@ -42,10 +42,10 @@
   :count_labs_total: 96
   :count_labs_passed: 0
   :count_tests_total: 361
-  :count_tests_passed: 0
+  :count_tests_passed: 2
 :progress_test:
   :count_tests_total: 361
-  :count_tests_passed: 0
+  :count_tests_passed: 2
   Start:
     :Week: 1
     :Order: 1
@@ -681,10 +681,10 @@
     :Order: 9
     :Type: lab
     :count_tests: 3
-    :count_tests_passed: 0
+    :count_tests_passed: 2
     :tests:
-      prob1a: 0
-      prob1b: 0
+      prob1a: 1
+      prob1b: 1
       prob2a: 0
   IndexOf:
     :Week: 5

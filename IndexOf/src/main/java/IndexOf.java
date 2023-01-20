@@ -18,12 +18,12 @@ public class IndexOf {
              {
                 
                 index = count;
-
+                return index;
              }
 
 
         }
 
-        return index;
+        return -1;
     }
 }

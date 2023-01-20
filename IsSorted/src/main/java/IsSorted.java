@@ -9,7 +9,7 @@ public class IsSorted {
     public boolean checkSort(int[] arr){
         
 
-        for(int count = 0; count < arr.length; count ++)
+        for(int count = 0; count <= arr.length; count ++)
         {
             int currentArr = arr[count];
             int nextArr = arr[count + 1];

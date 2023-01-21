@@ -15,6 +15,8 @@ public class IsSorted {
         {
             int currentArr = arr[i];
             int nextArr = arr[j];
+            System.out.println("Current Arr: " + currentArr);
+            System.out.println("NextArr: " + nextArr);
             
             if(currentArr > nextArr)
             {

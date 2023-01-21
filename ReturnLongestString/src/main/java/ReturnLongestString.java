@@ -34,9 +34,12 @@ public class ReturnLongestString {
                 arr[num] = arr[num - 1];
                 arr[num - 1] = strTemp;
                 lengthArr[num - 1] = numTemp;
-            }
 
+            }
+            
         }
+
+        return arr[num - 1];
 
        
        

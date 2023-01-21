@@ -9,21 +9,13 @@ public class IsSorted {
     public boolean checkSort(int[] arr){
         
 
-      for(int i = 0; i < arr.length; i+=2)
+      for(int count = 0; count < arr.length; count++)
       {
-        for(int j = 1; j < arr.length; j+=2)
-        {
-            int currentArr = arr[i];
-            int nextArr = arr[j];
-            System.out.println("Current Arr: " + currentArr);
-            System.out.println("NextArr: " + nextArr);
-            
-            if(currentArr > nextArr)
-            {
-                return false;
-            }
-            
-        }
+          if(arr[count] > arr[count+1])
+          {
+              return false;
+
+          }
       }
 
         return true;

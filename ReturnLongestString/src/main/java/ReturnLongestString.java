@@ -11,6 +11,7 @@ public class ReturnLongestString {
     public String longest(String[] arr){
         int num = arr.length;
         int[] lengthArr = new int[num];
+        String longestString;
 
         for(int count = 0; count < num; count++)
         {
@@ -31,11 +32,13 @@ public class ReturnLongestString {
                 arr[count] = strtemp;
                 lengthArr[count] = inttemp;
             }
+
+            
         }
 
-        String longestString = arr[arr.length];
-
-        return  longestString;
+        
+        return arr[arr.length - 1];
+        
 
 
     }

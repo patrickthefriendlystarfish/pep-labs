@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 
 public class ReturnLongestString {
     /**
@@ -8,6 +9,32 @@ public class ReturnLongestString {
      * @return the longest String within arr. You can assume that there are no ties for the longest string.
      */
     public String longest(String[] arr){
-        return null;
+        int num = arr.length;
+        int[] lengthArr = new int[num];
+
+        for(int count = 0; count < num; count++)
+        {
+            String temp = arr[count];
+            lengthArr[count] = temp.length();
+
+        }
+        for(int count = 1; count < num; count++)
+        {
+            if(lengthArr[count - 1] > lengthArr[count])
+            {
+                String strtemp = arr[count];
+                int inttemp = lengthArr[count];
+
+                lengthArr[count] = lengthArr[count - 1];
+                arr[count] = arr[count - 1];
+
+                arr[count] = strtemp;
+                lengthArr[count] = inttemp;
+            }
+        }
+
+        
+
+
     }
 }

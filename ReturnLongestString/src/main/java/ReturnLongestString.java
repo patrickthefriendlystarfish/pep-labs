@@ -42,6 +42,6 @@ public class ReturnLongestString {
         }
         
         
-
+        return arr[arr.length - 1];
     }
 }

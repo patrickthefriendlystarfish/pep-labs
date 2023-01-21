@@ -12,28 +12,34 @@ public class ReturnLongestString {
         int num = arr.length;
         int[] lengthArr = new int[num];
         String longestString;
+        String strTemp = "";
+        int numTemp = 0;
 
         for(int count = 0; count < num; count++)
         {
             String temp = arr[count];
             lengthArr[count] = temp.length();
 
-        }
-        for(int count = 1; count < num; count++)
-        {
-            if(lengthArr[count - 1] > lengthArr[count])
-            {
-                String strtemp = arr[count];
-                int inttemp = lengthArr[count];
-
-                lengthArr[count] = lengthArr[count - 1];
-                arr[count] = arr[count - 1];
-
-                arr[count] = strtemp;
-                lengthArr[count] = inttemp;
-            }
             
         }
+
+        for(int count = 1; count < num; count++)
+        {
+            if(lengthArr[num-1] > lengthArr[num])
+            {
+                strTemp = arr[num];
+                numTemp = lengthArr[num];
+
+                lengthArr[num] = lengthArr[num - 1];
+                arr[num] = arr[num - 1];
+                arr[num - 1] = strTemp;
+                lengthArr[num - 1] = numTemp;
+            }
+
+        }
+
+       
+       
 
     
         

@@ -35,13 +35,9 @@ public class ReturnLongestString {
             
         }
 
-        for(int count = 0; count < arr.length; count++)
-        {
-            System.out.println(arr[count]);
-            System.out.println(lengthArr[count]);
-        }
+    
         
         
-        return arr[arr.length - 1];
+        
     }
 }

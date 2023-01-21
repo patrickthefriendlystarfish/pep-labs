@@ -42,10 +42,10 @@
   :count_labs_total: 96
   :count_labs_passed: 0
   :count_tests_total: 361
-  :count_tests_passed: 0
+  :count_tests_passed: 2
 :progress_test:
   :count_tests_total: 361
-  :count_tests_passed: 0
+  :count_tests_passed: 2
   Start:
     :Week: 1
     :Order: 1
@@ -711,10 +711,10 @@
     :Order: 12
     :Type: challenge
     :count_tests: 3
-    :count_tests_passed: 0
+    :count_tests_passed: 2
     :tests:
-      ReturnLongestStringTest1: 0
-      ReturnLongestStringTest2: 0
+      ReturnLongestStringTest1: 1
+      ReturnLongestStringTest2: 1
       ReturnLongestStringTest3: 0
   FlightTracker:
     :Week: 5

@@ -73,7 +73,9 @@ public class FlightService {
      * @return all flights in the database.
      */
     public List<Flight> getAllFlights() {
-        return null;
+        FlightDAO flightdao = new FlightDAO();
+        List<Flight> allFlights = flightdao.getAllFlights();
+        return allFlights;
     }
 
     /**

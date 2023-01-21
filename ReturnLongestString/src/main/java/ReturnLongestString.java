@@ -36,10 +36,12 @@ public class ReturnLongestString {
             
         }
 
-        
-        return arr[arr.length];
-        
+        longestString = arr[arr.length];
 
+        
+        
+        
+        return longestString;
 
     }
 }

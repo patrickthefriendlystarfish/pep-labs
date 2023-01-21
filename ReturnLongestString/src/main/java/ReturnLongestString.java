@@ -36,7 +36,7 @@ public class ReturnLongestString {
             
         }
 
-        longestString = arr[arr.length];
+        longestString = arr[arr.length - 1];
 
         
         

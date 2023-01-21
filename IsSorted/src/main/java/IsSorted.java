@@ -11,7 +11,7 @@ public class IsSorted {
 
       for(int i = 0; i < arr.length; i+=2)
       {
-        for(int j = 1; j < arr.length ; j+=2)
+        for(int j = 1; j < arr.length; j+=2)
         {
             int currentArr = arr[i];
             int nextArr = arr[j];
@@ -22,6 +22,7 @@ public class IsSorted {
             {
                 return false;
             }
+            
         }
       }
 

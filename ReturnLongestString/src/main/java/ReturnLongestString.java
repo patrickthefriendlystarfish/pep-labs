@@ -33,7 +33,9 @@ public class ReturnLongestString {
             }
         }
 
-        
+        String longestString = arr[arr.length];
+
+        return  longestString;
 
 
     }

@@ -9,18 +9,19 @@ public class IsSorted {
     public boolean checkSort(int[] arr){
         
 
-        for(int count = 0; count < arr.length; count ++)
+      for(int i = 0; i < arr.length; i+=2)
+      {
+        for(int j = 1; j < arr.length 1; j+=2)
         {
-            int currentArr = arr[count];
-            int nextArr = arr[count + 1];
-
+            int currentArr = arr[i];
+            int nextArr = arr[j];
+            
             if(currentArr > nextArr)
             {
                 return false;
             }
-
-
         }
+      }
 
         return true;
     }

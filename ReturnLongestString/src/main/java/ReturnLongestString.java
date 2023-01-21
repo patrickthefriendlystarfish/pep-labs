@@ -32,16 +32,16 @@ public class ReturnLongestString {
                 arr[count] = strtemp;
                 lengthArr[count] = inttemp;
             }
-
             
         }
 
-        longestString = arr[arr.length - 1];
-
+        for(int count = 0; count < arr.length; count++)
+        {
+            System.out.println(arr[count]);
+            System.out.println(lengthArr[count]);
+        }
         
         
-        
-        return longestString;
 
     }
 }

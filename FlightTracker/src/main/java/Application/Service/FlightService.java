@@ -3,7 +3,10 @@ package Application.Service;
 import Application.Model.Flight;
 import Application.DAO.FlightDAO;
 
+import static org.mockito.ArgumentMatchers.nullable;
+
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -64,12 +67,31 @@ public class FlightService {
      *         user should have some insight if they attempted to edit a nonexistent flight.)
      */
     public Flight updateFlight(int flight_id, Flight flight){
+       
         FlightDAO flightdao = new FlightDAO();
-        Flight newFlight = new Flight();
 
-        newFlight = flightdao.insertFlight(newFlight);
+       
+        if(flightdao.getFlightById(flight_id) == null)
+        {
+            return null;
 
-        return newFlight;
+
+        }
+        else
+        {
+            flightdao.updateFlight(flight_id, flight);
+            
+        }
+
+        Flight flight = new Flight();
+
+        return flight;
+
+        
+
+         
+
+        
     }
 
     /**

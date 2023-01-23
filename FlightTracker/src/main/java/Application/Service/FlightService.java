@@ -48,8 +48,8 @@ public class FlightService {
      *         inform our provide the front-end client with information about the added Flight.
      */
     public Flight addFlight(Flight flight){
-       FlightDAO flightdao = new FlightDAO();
-       return flightdao.insertFlight(flight);
+       
+       return flightDAO.insertFlight(flight);
     }
 
     /**
@@ -66,18 +66,18 @@ public class FlightService {
      */
     public Flight updateFlight(int flight_id, Flight flight){
        
-        FlightDAO flightdao = new FlightDAO();
+        
 
         
         
 
        
-        if(flightdao.getFlightById(flight_id) == null)
+        if(flightDAO.getFlightById(flight_id) == null)
         {
             return null;
         }
         
-        flightdao.updateFlight(flight_id, flight);  
+        flightDAO.updateFlight(flight_id, flight);  
         
 
 
@@ -92,8 +92,8 @@ public class FlightService {
      * @return all flights in the database.
      */
     public List<Flight> getAllFlights() {
-        FlightDAO flightdao = new FlightDAO();
-        List<Flight> allFlights = flightdao.getAllFlights();
+        
+        List<Flight> allFlights = flightDAO.getAllFlights();
         return allFlights;
     }
 
@@ -106,8 +106,8 @@ public class FlightService {
      * @return all flights departing from departure_city and arriving at arrival_city.
      */
     public List<Flight> getAllFlightsFromCityToCity(String departure_city, String arrival_city) {
-        FlightDAO flightdao = new FlightDAO();
-        List<Flight> allFlights = flightdao.getAllFlightsFromCityToCity(departure_city, arrival_city);
+        
+        List<Flight> allFlights = flightDAO.getAllFlightsFromCityToCity(departure_city, arrival_city);
         return allFlights;
     }
 }

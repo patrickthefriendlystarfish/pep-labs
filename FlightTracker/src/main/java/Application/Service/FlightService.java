@@ -5,9 +5,7 @@ import Application.DAO.FlightDAO;
 
 import static org.mockito.ArgumentMatchers.nullable;
 
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.util.ArrayList;
+
 import java.util.List;
 
 /**
@@ -69,29 +67,21 @@ public class FlightService {
     public Flight updateFlight(int flight_id, Flight flight){
        
         FlightDAO flightdao = new FlightDAO();
+        
 
        
         if(flightdao.getFlightById(flight_id) == null)
         {
             return null;
-
-
         }
         else
         {
-            flightdao.updateFlight(flight_id, flight);
-            
+            flightdao.updateFlight(flight_id, flight);  
         }
 
-        Flight flight = new Flight();
 
         return flight;
 
-        
-
-         
-
-        
     }
 
     /**
@@ -117,9 +107,6 @@ public class FlightService {
     public List<Flight> getAllFlightsFromCityToCity(String departure_city, String arrival_city) {
         FlightDAO flightdao = new FlightDAO();
         List<Flight> allFlights = flightdao.getAllFlightsFromCityToCity(departure_city, arrival_city);
-
-
-
         return allFlights;
     }
 }

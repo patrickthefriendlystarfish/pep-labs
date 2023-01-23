@@ -67,6 +67,8 @@ public class FlightService {
     public Flight updateFlight(int flight_id, Flight flight){
        
         FlightDAO flightdao = new FlightDAO();
+
+        
         
 
        
@@ -74,10 +76,9 @@ public class FlightService {
         {
             return null;
         }
-        else
-        {
-            flightdao.updateFlight(flight_id, flight);  
-        }
+        
+        flightdao.updateFlight(flight_id, flight);  
+        
 
 
         return flight;

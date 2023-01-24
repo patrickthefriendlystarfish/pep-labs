@@ -66,11 +66,6 @@ public class FlightService {
      */
     public Flight updateFlight(int flight_id, Flight flight){
        
-        
-
-        
-        
-
        
         if(flightDAO.getFlightById(flight_id) == null)
         {

@@ -76,7 +76,7 @@ public class FlightService {
         
 
 
-        return flight;
+        return flightDAO.getFlightById(flight_id);
 
     }
 

@@ -1,0 +1,1 @@
+CREATE TABLE post (id SERIAL PRIMARY KEY, post VARCHAR(255), user_fk INTEGER REFERENCES user(id));

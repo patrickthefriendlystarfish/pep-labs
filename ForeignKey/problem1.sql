@@ -1,4 +1,4 @@
 CREATE TABLE post
-(id int PRIMARY KEY,
+(id SERIAL PRIMARY KEY,
 post VARCHAR(255),
-FOREIGN KEY user_fk REFERENCES user(id));
+FOREIGN KEY (user_fk) REFERENCES user(id));

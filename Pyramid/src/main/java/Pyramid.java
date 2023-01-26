@@ -35,5 +35,6 @@ public class Pyramid {
             str += "*";
         }
       }
+      return str;
     }
 }

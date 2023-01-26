@@ -31,13 +31,6 @@ public class ReturnLongestString {
         }
 
         
-
-       
-       
-
-    
-        
-        
-        
+        return arr[arr.length];
     }
 }

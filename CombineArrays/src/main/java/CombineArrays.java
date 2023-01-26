@@ -11,6 +11,7 @@ public class CombineArrays {
         int newLen = arr1.length + arr2.length;
         System.out.println("new length: " + newLen);
         int[] newArr = new int[newLen];
+        boolean arr1read = false;
 
         for(int count = 0; count < newLen; count++)
         {
@@ -19,7 +20,7 @@ public class CombineArrays {
                 newArr[count] = arr1[count];
             }
 
-            if(newLen - count == arr2.length)
+            if(newLen - count == arr2.length && arr1read == false)
             {
                newArr[count] = arr2[count];
             }

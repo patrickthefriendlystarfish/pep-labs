@@ -21,13 +21,20 @@ public class ReturnLongestString {
         {
             if(length[count - 1] > length[count])
             {
+                
                 lengthTemp = length[count];
                 strTemp = arr[count];
                 length[count] = length[count - 1];
                 arr[count] = arr[count - 1];
                 arr[count - 1] = strTemp;
                 length[count - 1] = lengthTemp;
+
             }
+        }
+
+        for(int count = 0; count < arr.length; count++)
+        {
+            System.out.println(arr[count]);
         }
 
         

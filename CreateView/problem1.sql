@@ -1,1 +1,1 @@
-CREATE VIEW AS SELECT first_name, last_name FROM site_user;
+CREATE VIEW AS SELECT firstname, lastname FROM site_user;

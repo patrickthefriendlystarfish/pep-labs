@@ -10,9 +10,24 @@ public class ReturnLongestString {
      */
     public String longest(String[] arr){
         int[] length = new int[arr.length];
+        String strTemp = "";
+        int lengthTemp = 0;
         for(int count = 0; count < arr.length; count++)
         {
-            
+            length[count] = arr[count].length();
+        }
+
+        for(int count = 1; count < arr.length; count++)
+        {
+            if(length[count - 1] > length[count])
+            {
+                lengthTemp = length[count];
+                strTemp = arr[count];
+                length[count] = length[count - 1];
+                arr[count] = arr[count - 1];
+                arr[count - 1] = strTemp;
+                length[count - 1] = lengthTemp;
+            }
         }
 
         

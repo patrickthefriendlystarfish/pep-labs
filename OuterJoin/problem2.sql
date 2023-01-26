@@ -1,0 +1,1 @@
+SELECT * FROM class RIGHT OUTER JOIN on class.class_title = student.class_title; 

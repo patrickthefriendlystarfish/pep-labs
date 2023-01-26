@@ -16,7 +16,7 @@ public class CombineArrays {
             newArr[count] = arr1[count];
        }
 
-       for(int count = arr1.length + 1; count < newLen; count ++)
+       for(int count = arr1.length; count < newLen; count ++)
        {
             newArr[count] = arr2[count];
        }

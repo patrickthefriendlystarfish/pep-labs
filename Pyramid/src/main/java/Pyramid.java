@@ -30,9 +30,9 @@ public class Pyramid {
       String str = "";
       for(int rows = 0; rows < n; rows++)
       {
-        for(int cols = 0; cols < n; cols++)
+        for(int stars = 1; stars < rows; stars++)
         {
-            str += "*";
+          str +="*\n";
         }
       }
       return str;

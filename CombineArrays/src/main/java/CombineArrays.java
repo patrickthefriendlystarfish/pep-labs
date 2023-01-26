@@ -18,6 +18,11 @@ public class CombineArrays {
             if(count < arr1.length)
             {
                 newArr[count] = arr1[count];
+                
+            }
+            if(count == arr1.length)
+            {
+                arr1read = true;
             }
 
             if(newLen - count == arr2.length && arr1read == false)

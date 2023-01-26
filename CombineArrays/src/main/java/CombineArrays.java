@@ -21,6 +21,11 @@ public class CombineArrays {
             newArr[count] = arr2[count];
        }
 
+       for(int count = 0; count < newLen; count++)
+       {
+            System.out.println(newArr[count]);
+       }
+
        return newArr;
         
     }

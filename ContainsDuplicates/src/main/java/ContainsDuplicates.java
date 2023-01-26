@@ -12,11 +12,12 @@ public class ContainsDuplicates {
       
         for(int count = 0; count < nums.length; count++)
         {
-            hash.add(nums[count]);
-            if(hash.contains(nums[count]))
+          if(hash.contains(nums[count]))
             {
               return true;
             }
+            hash.add(nums[count]);
+            
         }
         return false;
         

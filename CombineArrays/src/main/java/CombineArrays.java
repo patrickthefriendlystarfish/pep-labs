@@ -12,20 +12,18 @@ public class CombineArrays {
         System.out.println("new length: " + newLen);
         int[] newArr = new int[newLen];
 
-       for(int count = 0; count < arr1.length; count++)
-       {
-            newArr[count] = arr1[count];
-       }
+        for(int count = 0; count < newLen; count++)
+        {
+            if(count < arr1.length)
+            {
+                newArr[count] = arr1[count];
+            }
 
-       for(int count = arr1.length; count < newLen; count ++)
-       {
-            newArr[count] = arr2[count];
-       }
-
-       for(int count = 0; count < newLen; count++)
-       {
-            System.out.println(newArr[count]);
-       }
+            if(newLen - count == arr2.length)
+            {
+               newArr[count] = arr2[count];
+            }
+        }
 
        return newArr;
         

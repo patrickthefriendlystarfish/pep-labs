@@ -28,7 +28,7 @@ public class Pyramid {
      */
     public String returnPyramid(int n){
       String str = "";
-      for(int rows = 0; rows <= n; rows++)
+      for(int rows = 0; rows < n; rows++)
       {
         for(int stars = 0; stars <= rows; stars++)
         {

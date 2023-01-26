@@ -13,30 +13,19 @@ public class CombineArrays {
         System.out.println("new length: " + newLen);
         int[] newArr = new int[newLen];
         boolean arr1read = false;
+        int arr2count = 0;
 
-        for(int count = 0; count <= newLen; count++)
+        for(int count = 0; count < arr1.length; count++)
         {
-            if(count < arr1.length)
-            {
-                newArr[count] = arr1[count];
-                
-            }
-            if(count == arr1.length)
-            {
-                arr1read = true;
-            }
-
-            if(newLen - count == arr2.length && arr1read == false)
-            {
-               newArr[count] = arr2[count];
-            }
-            
+            newArr[count] = arr1[count];
+        }
+        for(int count = arr1.length; count <= newLen && arr2count < 3; count++)
+        {
+            newArr[count] = arr2[arr2count];
+            arr2count++;
         }
 
-        for(int count = 0; count < newLen; count++)
-        {
-            System.out.println(newArr[count]);
-        }
+        
 
 
        return newArr;

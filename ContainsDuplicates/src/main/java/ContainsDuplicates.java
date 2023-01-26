@@ -9,7 +9,7 @@ public class ContainsDuplicates {
      */
     public boolean containsDuplicate(int[] nums){
         HashSet<Integer> hash = new HashSet<Integer>();
-      try{
+      
         for(int count = 0; count < nums.length; count++)
         {
             hash.add(nums[count]);
@@ -20,7 +20,7 @@ public class ContainsDuplicates {
         }
         return false;
         
-      }
+      
       
        
     }

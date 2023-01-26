@@ -36,6 +36,7 @@ public class Pyramid {
           
         }
         str +="\n";
+        System.out.print(str);
       }
       return str;
     }

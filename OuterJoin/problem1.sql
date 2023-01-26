@@ -1,0 +1,1 @@
+SELECT * FROM class left outer join on student.class_title = class.class_title;

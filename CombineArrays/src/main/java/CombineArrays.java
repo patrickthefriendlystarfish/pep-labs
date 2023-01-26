@@ -9,6 +9,7 @@ public class CombineArrays {
      */
     public int[] combine(int[] arr1, int[] arr2){
         int newLen = arr1.length + arr2.length;
+        System.out.println("new length: " + newLen);
         int[] newArr = new int[newLen];
 
        for(int count = 0; count < arr1.length; count++)

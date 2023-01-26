@@ -9,6 +9,7 @@ public class ReturnLongestString {
      * @return the longest String within arr. You can assume that there are no ties for the longest string.
      */
     public String longest(String[] arr){
+        System.out.println("calling longest()");
         int[] length = new int[arr.length];
         String strTemp = "";
         int lengthTemp = 0;
@@ -38,6 +39,6 @@ public class ReturnLongestString {
         }
 
         
-        return arr[arr.length];
+        return arr[arr.length - 1];
     }
 }

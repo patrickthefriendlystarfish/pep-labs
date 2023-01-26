@@ -14,6 +14,6 @@ public class ContainsDuplicates {
         {
             hash.add(nums[count]);
         }
-        
+        return true;
     }
 }

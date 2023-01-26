@@ -8,12 +8,13 @@ public class CombineArrays {
      * @return an array containing the contents of arr1 followed by the contents of arr2.
      */
     public int[] combine(int[] arr1, int[] arr2){
+        System.out.println("Called combine()");
         int newLen = arr1.length + arr2.length;
         System.out.println("new length: " + newLen);
         int[] newArr = new int[newLen];
         boolean arr1read = false;
 
-        for(int count = 0; count < newLen; count++)
+        for(int count = 0; count <= newLen; count++)
         {
             if(count < arr1.length)
             {
@@ -29,7 +30,14 @@ public class CombineArrays {
             {
                newArr[count] = arr2[count];
             }
+            
         }
+
+        for(int count = 0; count < newLen; count++)
+        {
+            Sysetm.out.println(newArr[count]);
+        }
+
 
        return newArr;
         

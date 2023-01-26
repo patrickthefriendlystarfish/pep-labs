@@ -9,11 +9,17 @@ public class ContainsDuplicates {
      */
     public boolean containsDuplicate(int[] nums){
         HashSet<Integer> hash = new HashSet<Integer>();
-
+      try{
         for(int count = 0; count < nums.length; count++)
         {
             hash.add(nums[count]);
         }
+        return false;
+      }
+      catch(Exception ex)
+      {
         return true;
+      }
+       
     }
 }

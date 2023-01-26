@@ -30,6 +30,7 @@ public class Pyramid {
       String str = "";
       for(int rows = 1; rows < n; rows++)
       {
+        System.out.println(rows);
         for(int stars = 1; stars <= rows; stars++)
         {
           str = str + "*";

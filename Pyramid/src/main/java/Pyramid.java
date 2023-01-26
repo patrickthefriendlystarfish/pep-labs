@@ -32,8 +32,10 @@ public class Pyramid {
       {
         for(int stars = 1; stars < rows; stars++)
         {
-          str +="*\n";
+          str +="*";
+          
         }
+        str +="\n";
       }
       return str;
     }

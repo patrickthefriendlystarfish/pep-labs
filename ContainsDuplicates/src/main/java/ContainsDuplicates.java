@@ -13,13 +13,15 @@ public class ContainsDuplicates {
         for(int count = 0; count < nums.length; count++)
         {
             hash.add(nums[count]);
+            if(hash.contains(nums[count]))
+            {
+              return true;
+            }
         }
         return false;
+        
       }
-      catch(Exception ex)
-      {
-        return true;
-      }
+      
        
     }
 }

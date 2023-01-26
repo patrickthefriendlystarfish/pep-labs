@@ -35,7 +35,7 @@ public class CombineArrays {
 
         for(int count = 0; count < newLen; count++)
         {
-            Sysetm.out.println(newArr[count]);
+            System.out.println(newArr[count]);
         }
 
 

@@ -67,8 +67,9 @@ public class BookService {
         catch(SQLException ex)
         {
             System.out.println(ex.getMessage());
+            return null;
         }
-        return null;
+        
     }
     /**
      * TODO: Use the bookDAO to retrieve a list of all books that have a bookCount above 0.

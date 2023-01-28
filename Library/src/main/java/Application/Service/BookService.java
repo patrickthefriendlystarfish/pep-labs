@@ -5,7 +5,6 @@ import Application.Model.Book;
 
 import static org.mockito.ArgumentMatchers.nullable;
 
-import java.sql.SQLException;
 import java.util.List;
 
 /**
@@ -54,22 +53,17 @@ public class BookService {
      * key was already in use.)
      */
     public Book addBook(Book book) {
+       int isbn = book.getIsbn();
+       if(bookDAO.getBookByIsbn(isbn) == null)
+       {
+          return null;
+       }
 
-        try
-        {
-                Book bk = bookDAO.insertBook(book);
-                if(bk == null)
-                {
-                    throw new SQLException();
-                }
-                return bk;
-        }
-        catch(SQLException ex)
-        {
-            System.out.println(ex.getMessage());
-            return null;
-        }
-        
+       Book bk = bookDAO.insertBook(book);
+
+       return bk;
+
+       /*return bookDAO.insertBook(book);*/
     }
     /**
      * TODO: Use the bookDAO to retrieve a list of all books that have a bookCount above 0.

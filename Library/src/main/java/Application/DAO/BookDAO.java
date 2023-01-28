@@ -100,8 +100,9 @@ public class BookDAO {
             return book;
         }catch(SQLException e){
             System.out.println(e.getMessage());
+            return null;
         }
-        return null;
+        
     }
     /**
      * TODO: retrieve all books from the Book table with a book_count over zero.

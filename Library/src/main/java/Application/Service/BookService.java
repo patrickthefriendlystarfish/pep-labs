@@ -3,6 +3,8 @@ package Application.Service;
 import Application.DAO.BookDAO;
 import Application.Model.Book;
 
+import static org.mockito.ArgumentMatchers.nullable;
+
 import java.sql.SQLException;
 import java.util.List;
 
@@ -55,13 +57,18 @@ public class BookService {
 
         try
         {
-                bookDAO.insertBook(book);
-                return book;
+                Book bk = bookDAO.insertBook(book);
+                if(bk == null)
+                {
+                    throw new SQLException();
+                }
+                return bk;
         }
         catch(SQLException ex)
         {
-            return null;
+            System.out.println(ex.getMessage());
         }
+        return null;
     }
     /**
      * TODO: Use the bookDAO to retrieve a list of all books that have a bookCount above 0.

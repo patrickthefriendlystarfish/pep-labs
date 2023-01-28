@@ -56,11 +56,7 @@ public class BookService {
     
         int isbn = book.getIsbn();
 
-        if(bookDAO.getBookByIsbn(isbn) == null)
-        {
-            return null;
-        }
-       
+        
 
        Book bk = bookDAO.insertBook(book);
        if(bk == null)

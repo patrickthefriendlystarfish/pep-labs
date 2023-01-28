@@ -100,8 +100,9 @@ public class BookDAO {
             return book;
         }catch(SQLException e){
             System.out.println(e.getMessage());
-            return null;
+           
         }
+        return null;
         
     }
     /**
@@ -118,6 +119,7 @@ public class BookDAO {
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
 
             //write preparedStatement's setInt method here.
+            
 
             ResultSet rs = preparedStatement.executeQuery();
             while(rs.next()){

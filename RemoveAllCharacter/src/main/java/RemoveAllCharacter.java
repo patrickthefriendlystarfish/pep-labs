@@ -15,7 +15,7 @@ public class RemoveAllCharacter {
         String newString = "";
         for(int count = 0; count < str.length(); count++)
         {
-            
+            if(str.)
         }
     }
 }

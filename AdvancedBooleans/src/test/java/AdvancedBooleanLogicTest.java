@@ -63,6 +63,7 @@ public class AdvancedBooleanLogicTest {
         boolean input2 = true;
         boolean expected = false;
         boolean actual = abl.returnExclusiveOr(input1, input2);
+        
         Assert.assertEquals(expected, actual);
     }
     /**

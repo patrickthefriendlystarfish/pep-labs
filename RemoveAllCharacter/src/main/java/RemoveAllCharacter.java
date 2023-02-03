@@ -15,7 +15,16 @@ public class RemoveAllCharacter {
         String newString = "";
         for(int count = 0; count < str.length(); count++)
         {
-            if(str.)
+            String currentStr = Character.toString(str.charAt(count));
+
+            if(currentStr.equals(ch))
+            {
+                continue;
+            }
+           
+            newString += currentStr;
+            
         }
+        
     }
 }

@@ -26,5 +26,6 @@ public class RemoveAllCharacter {
             
         }
         
+        return newString;
     }
 }

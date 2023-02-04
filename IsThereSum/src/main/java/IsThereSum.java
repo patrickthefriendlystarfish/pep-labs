@@ -17,7 +17,7 @@ public class IsThereSum {
             {
                 int sum = arr[i] + arr[j];
                 System.out.println("Sum: " + sum); 
-                if(arr[j] + arr[i] == target)
+                if(sum == target)
                 { 
                     return true;
                 }

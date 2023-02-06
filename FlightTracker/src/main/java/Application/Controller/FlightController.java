@@ -82,6 +82,7 @@ public class FlightController {
         Flight addedFlight = flightService.addFlight(flight);
         if(addedFlight==null){
             ctx.status(400);
+            
         }else{
             ctx.json(mapper.writeValueAsString(addedFlight));
         }

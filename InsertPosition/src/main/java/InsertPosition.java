@@ -16,14 +16,15 @@ public class InsertPosition {
      */
     public int searchInsert(int[] nums, int target) {
         
-        for(int count = 0; count < nums.length; count++)
+        for(int count = 1; count < nums.length; count++)
         {
-            if((target > nums[count]) && (target < nums[count + 1]))
+            if((target < nums[count - 1]) && (target > nums[count + 1]))
             {
                 return count;
             }
+
         }
-        return 0;
+       
 
     }
 }

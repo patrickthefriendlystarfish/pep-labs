@@ -1,3 +1,5 @@
+import javax.lang.model.util.ElementScanner6;
+
 public class CharComparison {
     /**
      * Given an array of char, determine if the array A belongs to the left or to the right of char array B lexigraphically.
@@ -13,19 +15,18 @@ public class CharComparison {
     public int compare(char[] a, char[] b){
       for(int count = 0; count < b.length; count++)
       {
-         if(b[count].compareTo(a[count]) > 0)
-         {
-            return -1
-         }
-         else if(b[count].compareTo(a[count]) < 0)
-         {
+          if(a[count] < b[count])
+          {
+             return -1;
+          }
+          else if(a[count] > b[count])
+          {
             return 1;
-         }
-         else
-         {
+          }
+          else
+          {
             return 0;
-         }
-
+          }
       }      
             
     }

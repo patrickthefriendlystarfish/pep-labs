@@ -30,13 +30,13 @@ public class SampleClassC implements Comparable<SampleClassC>{
      */
     public int compareTo(SampleClassC other) {
 
-        if(this.val > other.val)
-        {
-            return -1;
-        }
-        else if(other.val == this.val)
+        if(this.val == other.val)
         {
             return 0;
+        }
+        else if(this.val > other.val)
+        {
+            return -1;
         }
         else
         {

@@ -42,10 +42,10 @@
   :count_labs_total: 96
   :count_labs_passed: 0
   :count_tests_total: 361
-  :count_tests_passed: 0
+  :count_tests_passed: 1
 :progress_test:
   :count_tests_total: 361
-  :count_tests_passed: 0
+  :count_tests_passed: 1
   Start:
     :Week: 1
     :Order: 1
@@ -936,9 +936,9 @@
     :Order: 3
     :Type: lab
     :count_tests: 3
-    :count_tests_passed: 0
+    :count_tests_passed: 1
     :tests:
-      comparableObjectTest1: 0
+      comparableObjectTest1: 1
       comparableObjectTest2: 0
       comparableObjectTest3: 0
   Generic:

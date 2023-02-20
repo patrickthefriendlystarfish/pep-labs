@@ -1,3 +1,5 @@
+import javax.lang.model.util.ElementScanner6;
+
 /**
  * Notice that we are IMPLEMENTING the comparable interface, for type of ObjectToBeCompared.
  * This means that we must implement a method compareTo, otherwise the code will not compile. This compareTo method
@@ -27,7 +29,20 @@ public class SampleClassC implements Comparable<SampleClassC>{
      * @param other another object of type SampleClassC, which we are comparing to 'this' object.
      */
     public int compareTo(SampleClassC other) {
-        return 0;
+
+        if(this.val > other.val)
+        {
+            return -1;
+        }
+        else if(other.val == this.val)
+        {
+            return 0;
+        }
+        else
+        {
+            return 1;
+        }
+       
     }
 
 }

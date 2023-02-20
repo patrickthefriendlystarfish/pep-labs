@@ -1,3 +1,5 @@
+import java.util.HashSet;
+import java.util.Set;
 
 public class Isogram {
     /**
@@ -12,7 +14,19 @@ public class Isogram {
      * @param str a String.
      * @return true if str is an isogram, false otherwise.
      */
-    public boolean isIsogram(String str){
-        return false;
+    public boolean isIsogram(String str) throws IllegalArgumentException{
+        Set<Character> letters = new HashSet<Character>();
+
+      try{
+        for(int count = 0; count < str.length(); count++)
+        {
+            letters.add(str.charAt(count));
+        }
+        return true;
+        }
+        catch(IllegalArgumentException ex)
+        {
+            return false;
+        }
     }
 }

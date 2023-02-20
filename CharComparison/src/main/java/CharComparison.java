@@ -13,23 +13,48 @@ public class CharComparison {
      * @return -1 if A is less than B, 1 if A is greater than B, and 0 if the two arrays are identical.
      */
     public int compare(char[] a, char[] b){
+        char[] identicalLetters = new char[b.length];
       for(int count = 0; count < b.length; count++)
       {
-          if(a[count] < b[count])
-          {
-             return -1;
-          }
-          else if(a[count] > b[count])
-          {
-            return 1;
-          }
-          else
-          {
-            return 0;
-          }
-      }  
-      
-      return 0;
+        if(a[count] == b[count])
+        {
+            identicalLetters[count] = a[count];
+
             
+            
+        }
+        else if(a[count] < b[count])
+        {
+            if(count == 0)
+            {
+                return -1;
+            }
+            else
+            {
+                return -1;
+            }
+        }
+        else if(a[count] > b[count])
+        {
+            if(count == 0)
+            {
+                return 1;
+            }
+            else
+            {
+                return -1;
+            }
+        }
+  
+      }
+
+      
+
+
+
+
+
+      
+       return 0;
     }
 }

@@ -31,15 +31,18 @@ public class SampleClassC implements Comparable<SampleClassC>{
     public int compareTo(SampleClassC other) {
         if(other.val == this.val)
         {
+            System.out.println("returning 0 . . . ");
             return 0;
         }
 
         if(other.val < this.val)
         {
+            System.out.println("Returning -1 . . . ");
             return -1;
         }
         else
         {
+            System.out.println("Returning -1 . . .");
             return 1;
         }
 

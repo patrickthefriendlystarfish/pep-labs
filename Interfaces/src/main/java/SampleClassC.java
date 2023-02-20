@@ -42,7 +42,7 @@ public class SampleClassC implements Comparable<SampleClassC>{
         }
         else
         {
-            System.out.println("Returning -1 . . .");
+            System.out.println("Returning 1 . . .");
             return 1;
         }
 

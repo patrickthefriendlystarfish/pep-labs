@@ -24,7 +24,7 @@ public class InsertPosition {
             }
         }
        
-       return -1;
+       return 0;
 
        
     }

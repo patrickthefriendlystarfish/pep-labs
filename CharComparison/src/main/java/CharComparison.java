@@ -27,7 +27,9 @@ public class CharComparison {
           {
             return 0;
           }
-      }      
+      }  
+      
+      return 0;
             
     }
 }

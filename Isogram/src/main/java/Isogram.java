@@ -20,7 +20,12 @@ public class Isogram {
       try{
         for(int count = 0; count < str.length(); count++)
         {
-            letters.add(str.charAt(count));
+            if(letters.add(str.charAt(count)) == false)
+            {
+                return false;
+            }
+
+            
         }
         return true;
         }

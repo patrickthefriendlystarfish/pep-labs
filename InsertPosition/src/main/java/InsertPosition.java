@@ -18,16 +18,12 @@ public class InsertPosition {
         
         for(int count = 0; count < nums.length; count++)
         {
-           if(target > nums[count])
-           {
+            if((target > nums[count]) && (target < nums[count + 1]))
+            {
                 return count;
-           }
+            }
         }
-
         return 0;
-       
-       
-      
-       
+
     }
 }

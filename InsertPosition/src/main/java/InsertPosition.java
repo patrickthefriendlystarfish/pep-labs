@@ -19,7 +19,7 @@ public class InsertPosition {
        for(int count = 0; count < nums.length; count++)
        {
             System.out.println("Current Number: " + nums[count]);
-            if(target > nums[count])
+            if((nums[count] > target) && (target > nums[count - 1]))
             {
                 System.out.println("Returning count: " + count);
                 return count;

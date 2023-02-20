@@ -15,18 +15,14 @@ public class InsertPosition {
      * @return return the index that a number should be inserted into a sorted array.
      */
     public int searchInsert(int[] nums, int target) {
-       System.out.println("Target: " + target);
-       for(int count = 0; count < nums.length; count++)
-       {
-            System.out.println("Current Number: " + nums[count]);
-            if((nums[count] > target) && (target > nums[count - 1]))
+        
+        for(int count = 0; count < nums.length; count++)
+        {
+            if(target > nums[count])
             {
-                System.out.println("Returning count: " + count);
-                return count;
+                return count - 1;
             }
-       }
-
-       return -1;
+        }
        
        
 

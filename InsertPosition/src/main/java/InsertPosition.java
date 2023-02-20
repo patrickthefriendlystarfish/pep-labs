@@ -22,5 +22,7 @@ public class InsertPosition {
                 return nums[count];
             }
         }
+
+        return -1;
     }
 }

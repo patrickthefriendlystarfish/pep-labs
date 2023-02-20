@@ -34,7 +34,7 @@ public class SampleClassC implements Comparable<SampleClassC>{
         {
             return 0;
         }
-        else if(this.val > other.val)
+        else if(other.val < this.val)
         {
             return -1;
         }

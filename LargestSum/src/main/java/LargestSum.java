@@ -30,7 +30,7 @@ public class LargestSum {
                 }
             }
 
-            for(int k = i; k < nums.size(); k++)
+            for(int k = i; k < nums.size() - 1; k++)
             {
                 int currentNum = nums.get(k);
                 int nextNum = nums.get(k + 1);

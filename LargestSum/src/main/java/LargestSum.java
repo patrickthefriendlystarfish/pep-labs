@@ -12,6 +12,8 @@ public class LargestSum {
      */
     public int bigSum(List<Integer> nums){
         List<Integer> sums = new LinkedList<>();
+        //for sorting the list
+        int temp = 0;
         
         for(int i = 0; i < nums.size(); i++)
         {
@@ -32,5 +34,21 @@ public class LargestSum {
                 sums.add((currentNum + nextNum));
             }
         }
+
+        //sorting the List
+        for(int i = 0; i < sums.size() - 1; i++)
+        {
+            for(int j = 0; j < i; j++)
+            {
+                if(sums.get(j) > sums.get(j+1))
+                {
+                    temp = sums.get(j);
+                    sums.set(j, j+1);
+                    sums.set(j + 1, temp);
+                }
+            }
+        }
+
+        return sums.get(sums.size() - 1);
     }
 }

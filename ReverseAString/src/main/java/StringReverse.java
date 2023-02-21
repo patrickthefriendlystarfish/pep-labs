@@ -13,6 +13,7 @@ public class StringReverse {
      * @return the reverse of str.
      */
     public String reverse(String str){
+        System.out.println("Original String: " + str);
        StringBuilder strbuilder = new StringBuilder();
        String returnedString = "";
 
@@ -22,6 +23,7 @@ public class StringReverse {
        }
 
         returnedString = strbuilder.toString();
+        System.out.println("ReturnedString: " + returnedString);
 
         return returnedString;
         

@@ -16,7 +16,7 @@ public class StringReverse {
        StringBuilder strbuilder = new StringBuilder();
        String returnedString = "";
 
-       for(int count = str.length(); count > 0; --count)
+       for(int count = str.length() - 1; count >= 0; --count)
        {
             strbuilder.append(str.charAt(count));
        }

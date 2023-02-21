@@ -1,4 +1,5 @@
 
+import java.util.LinkedList;
 import java.util.List;
 
 public class LargestSum {
@@ -10,6 +11,26 @@ public class LargestSum {
      * @return the largest possible sum of separate numbers from nums.
      */
     public int bigSum(List<Integer> nums){
-        return 0;
+        List<Integer> sums = new LinkedList<>();
+        
+        for(int i = 0; i < nums.size(); i++)
+        {
+            if(i != 0)
+            {
+                for(int count = i; count > 0; count--)
+                {
+                    int currentNum = nums.get(count);
+                    int pastNum = nums.get(count - 1);
+                    sums.add((currentNum + pastNum));
+                }
+            }
+
+            for(int count = i; count < nums.size(); count++)
+            {
+                int currentNum = nums.get(count);
+                int nextNum = nums.get(count + 1);
+                sums.add((currentNum + nextNum));
+            }
+        }
     }
 }

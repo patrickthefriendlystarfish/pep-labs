@@ -14,39 +14,47 @@ public class LargestSum {
     public int bigSum(List<Integer> nums){
         List<Integer> sums = new ArrayList<>();
         //for sorting the list
-        int temp = 0;
         
         for(int i = 0; i < nums.size(); i++)
         {
-            if(i != 0)
+            if(i > 0)
             {
-                for(int count = i; count > 0; count--)
+                for(int j = i; i > 0; j--)
                 {
-                    int currentNum = nums.get(count);
-                    int pastNum = nums.get(count - 1);
-                    sums.add((currentNum + pastNum));
+                    int currentNum = nums.get(j);
+                    int previousNum = nums.get(j - 1);
+                    System.out.println("i > 0, in nested for");
+                    int sum = currentNum + previousNum;
+                    System.out.println("Sum of current number plus previousNumber :" + sum);
+                    sums.add(sum);
                 }
             }
 
-            for(int count = i; count < nums.size() - 1; count++)
+            for(int k = i; k < nums.size(); k++)
             {
-                int currentNum = nums.get(count);
-                int nextNum = nums.get(count + 1);
-                sums.add((currentNum + nextNum));
+                int currentNum = nums.get(k);
+                int nextNum = nums.get(k + 1);
+                System.out.println("In other nested for loop");
+                int sum = currentNum + nextNum;
+                System.out.println("Sum of currentNumber plus nextNum: " + sum);
+                sums.add(sum);
             }
         }
-
-       for(int i = 0; i < sums.size() - 1; i++)
-       {
-            for(int j = 0; j < sums.size() - 1; j++)
-            {
-                temp = sums.get(j);
-                sums.set(j, j + 1);
-                sums.set(j + 1, temp);
-            }
-       }
-
-       return sums.get(sums.size() - 1);
        
+        for(int i = 0; i < sums.size() - 1; i++)
+        {
+            for(int j = 0; j < sums.size() - i - 1; j++)
+            {
+                if(sums.get(j) > sums.get(j + 1))
+                {
+                    int temp = sums.get(j);
+                    sums.set(j, j + 1);
+                    sums.set(j + 1, temp);
+
+                }
+            }
+        }
+      
+       return sums.get(sums.size() - 1);
     }
 }

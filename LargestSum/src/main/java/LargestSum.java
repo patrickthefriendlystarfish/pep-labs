@@ -28,7 +28,7 @@ public class LargestSum {
                 }
             }
 
-            for(int count = i; count < nums.size(); count++)
+            for(int count = i; count < nums.size() - 1; count++)
             {
                 int currentNum = nums.get(count);
                 int nextNum = nums.get(count + 1);
@@ -38,7 +38,7 @@ public class LargestSum {
 
        for(int i = 0; i < sums.size() - 1; i++)
        {
-            for(int j = 0; j < sums.size() - i - 1; j++)
+            for(int j = 0; j < sums.size() - 1; j++)
             {
                 temp = sums.get(j);
                 sums.set(j, j + 1);

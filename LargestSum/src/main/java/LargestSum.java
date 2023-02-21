@@ -43,7 +43,7 @@ public class LargestSum {
                 if(sums.get(j) > sums.get(j+1))
                 {
                     temp = sums.get(j);
-                    sums.set(j, j+1);
+                    sums.set(j, sums.get(j+1));
                     sums.set(j + 1, temp);
                 }
             }

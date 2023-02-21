@@ -41,20 +41,17 @@ public class LargestSum {
             }
         }
        
-        for(int i = 0; i < sums.size() - 1; i++)
+        for (int i = 0; i < sums.size() - 1; i++)
         {
-            for(int j = 0; j < sums.size() - i - 1; j++)
-            {
-                if(sums.get(j) > sums.get(j + 1))
-                {
+            for (int j = 0; j < sums.size() - i - 1; j++)
+                if (sums.get(j) > sums.get(j + 1)) {
+                    // swap arr[j+1] and arr[j]
                     int temp = sums.get(j);
-                    sums.set(j, j + 1);
-                    sums.set(j + 1, temp);
-
+                    sums.set(j, j + 1);                 
+                    sums.set(j+1, temp);
                 }
-            }
         }
-      
-       return sums.get(sums.size() - 1);
-    }
+        return sums.get(sums.size() - 1);
+}
+    
 }

@@ -1,4 +1,5 @@
 
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -11,7 +12,7 @@ public class LargestSum {
      * @return the largest possible sum of separate numbers from nums.
      */
     public int bigSum(List<Integer> nums){
-        List<Integer> sums = new LinkedList<>();
+        List<Integer> sums = new ArrayList<>();
         //for sorting the list
         int temp = 0;
         
@@ -35,20 +36,17 @@ public class LargestSum {
             }
         }
 
-        //sorting the List
-        for(int i = sums.size() - 1; i > 0; i--)
-        {
-            for(int j = 0; j < i; j++)
+       for(int i = 0; i < sums.size() - 1; i++)
+       {
+            for(int j = 0; j < n - i - 1; j++)
             {
-                if(sums.get(j) > sums.get(j+1))
-                {
-                    temp = sums.get(j);
-                    sums.set(j, sums.get(j+1));
-                    sums.set(j + 1, temp);
-                }
+                temp = sums.get(j);
+                sums.set(j, j + 1);
+                sums.set(j + 1, temp);
             }
-        }
+       }
 
-        return sums.get(sums.size() - 1);
+       return sums.get(sums.size() - 1);
+       
     }
 }

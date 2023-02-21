@@ -20,7 +20,7 @@ public class LargestSum {
        {
           int currentNum = nums.get(i);
 
-          for(int count = i; count < nums.size(); count++)
+          for(int count = i + 1; count < nums.size(); count++)
           {
              int nextNum = nums.get(count);
              int sum = currentNum + nextNum;

@@ -17,11 +17,12 @@ public class Fibonacci {
      */
     public int fib(int n){
        int currentNum = 0;
-        for(int count = 2; count <= n; count++)
-        {
-            currentNum = ((count - 2) + (count - 1));
-        }
-        return currentNum;
+       
+       for(int count = 0; count < n; count++)
+       {
+         currentNum = (count + (count + 1));
+       }
+       return currentNum;
     }
 
 }

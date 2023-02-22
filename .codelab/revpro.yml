@@ -42,10 +42,10 @@
   :count_labs_total: 96
   :count_labs_passed: 0
   :count_tests_total: 361
-  :count_tests_passed: 0
+  :count_tests_passed: 1
 :progress_test:
   :count_tests_total: 361
-  :count_tests_passed: 0
+  :count_tests_passed: 1
   Start:
     :Week: 1
     :Order: 1
@@ -1037,9 +1037,9 @@
     :Order: 4
     :Type: challenge
     :count_tests: 3
-    :count_tests_passed: 0
+    :count_tests_passed: 1
     :tests:
-      fibTest1: 0
+      fibTest1: 1
       fibTest2: 0
       fibTest3: 0
   StringIsPalindrome:

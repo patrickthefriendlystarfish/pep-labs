@@ -19,7 +19,7 @@ public class Fibonacci {
        int num1 = 0; 
        int num2 = 1;
 
-       for(int count = 0; count < n; count++)
+       for(int count = 0; count <= n; count++)
        {
             int sumOfPrevTwo = num1 + num2;
             num1 = num2;

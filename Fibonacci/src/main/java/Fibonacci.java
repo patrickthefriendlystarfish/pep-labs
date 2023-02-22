@@ -20,7 +20,7 @@ public class Fibonacci {
        
        for(int count = 0; count < n; count++)
        {
-         if(count > 1)
+         if(count > 0)
          {
             currentNum = (count + (count + 1));
          }

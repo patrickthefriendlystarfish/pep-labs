@@ -1,3 +1,5 @@
+import java.util.HashMap;
+import java.util.Map;
 
 public class MostCommonCharacter {
     /**
@@ -8,6 +10,14 @@ public class MostCommonCharacter {
      * @return the most common character within str.
      */
     public char recurringChar(String str) {
-        return ' ';
+
+        Map<Character, Integer> map = new HashMap<>();
+        int counter = 0;
+
+        for(int count = 0; count < str.length(); count++)
+        {
+           
+        }
+        
     }
 }

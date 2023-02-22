@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -12,12 +13,27 @@ public class MostCommonCharacter {
     public char recurringChar(String str) {
 
         Map<Character, Integer> map = new HashMap<>();
+        
         int counter = 0;
-
+        
         for(int count = 0; count < str.length(); count++)
         {
-           
+            if(map.containsKey(str.charAt(count)))
+            {
+                map.put(str.charAt(count), map.get(str.charAt(count)) + 1);
+            }
+            else
+            {
+                map.put(str.charAt(count), counter);
+            }
         }
+
+        for(int count = 0; count < map.size(); count++)
+        {
+            
+        }
+
+       
         
     }
 }

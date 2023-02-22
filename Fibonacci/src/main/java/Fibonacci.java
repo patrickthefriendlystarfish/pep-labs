@@ -16,16 +16,8 @@ public class Fibonacci {
      * @return the nth number of fibonacci sequence.
      */
     public int fib(int n){
-       int currentNum = 0;
-       
-       for(int count = 0; count < n; count++)
-       {
-         if(count > 0)
-         {
-            currentNum = (count + (count + 1));
-         }
-       }
-       return currentNum;
+       n--;
+       fib(n);
     }
 
 }

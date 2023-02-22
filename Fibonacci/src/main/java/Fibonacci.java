@@ -16,29 +16,21 @@ public class Fibonacci {
      */
     public int fib(int n){
         
-        int firstNum = 0; 
-        int secondNum = 1;
+       
         int currentNum = 0;
-        for(int count = 1; count < n; count++)
+        for(int count = 0; count < n; count++)
         {
-            if(count == 1)
-            {
-                currentNum = firstNum + secondNum;
-                if(currentNum == n)
-                {
-                    return currentNum;
-                }
-            }
-            else
+            if(count > 1)
             {
                 currentNum = ((count) + (count - 1));
                 if(currentNum == n)
                 {
                     return currentNum;
                 }
-
             }
         }
+
         return 0;
+        
     }
 }

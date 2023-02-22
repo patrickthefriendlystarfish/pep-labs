@@ -18,9 +18,9 @@ public class Fibonacci {
     public int fib(int n){
        int currentNum = 0;
        
-       for(int count = 0; count <= n; count++)
+       for(int count = 0; count < n; count++)
        {
-         currentNum = (count + (count + 1));
+         currentNum = (count + count);
        }
        return currentNum;
     }

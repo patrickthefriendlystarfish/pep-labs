@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -13,6 +14,7 @@ public class MostCommonCharacter {
     public char recurringChar(String str) {
 
         Map<Character, Integer> map = new HashMap<>();
+
         
         int counter = 0;
         
@@ -28,12 +30,19 @@ public class MostCommonCharacter {
             }
         }
 
-        for(int count = 0; count < map.size(); count++)
+        int maxValueInMap = Collections.max(map.values());
+        for(Map.Entry<Character, Integer> entry : map.entrySet())
         {
-            
+            if(entry.getValue() == maxValueInMap)
+            {
+                return entry.getKey();
+            }
         }
 
-       
+
+        return 'a';
+
+      
         
     }
 }

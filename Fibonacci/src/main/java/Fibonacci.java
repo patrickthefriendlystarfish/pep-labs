@@ -1,3 +1,4 @@
+import javax.xml.namespace.QName;
 
 public class Fibonacci {
     /**
@@ -17,18 +18,12 @@ public class Fibonacci {
     public int fib(int n){
         
        
-        int currentNum = 0;
-        for(int count = 1; count < n; count++)
+        for(int count = 2; count < n; count++)
         {
-           currentNum = ((count) + (count - 1));
+            int currentNum = ((count - 1) + (count - 2));
 
-           if(currentNum == n)
-           {
-             return currentNum;
-           }
+            
         }
-
-        return 0;
-        
+        return currentNum;
     }
 }

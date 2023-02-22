@@ -16,8 +16,7 @@ public class Fibonacci {
      * @return the nth number of fibonacci sequence.
      */
     public int fib(int n){
-       n--;
-       fib(n);
+       int num 1 
     }
 
 }

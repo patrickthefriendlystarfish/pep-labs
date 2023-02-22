@@ -16,10 +16,10 @@ public class Fibonacci {
      * @return the nth number of fibonacci sequence.
      */
     public int fib(int n){
-        int count = 7, num1 = 0, num2 = 1;
+         int num1 = 0, num2 = 1;
        
 
-        for (int i = 1; i <= count; ++i)
+        for (int i = 1; i <= n; ++i)
         {
             num1++;
             int sumOfPrevTwo = num1 + num2;

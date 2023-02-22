@@ -21,10 +21,11 @@ public class Fibonacci {
 
         for (int i = 1; i <= n; ++i)
         {
-            num1++;
+            
             int sumOfPrevTwo = num1 + num2;
             num1 = num2;
             num2 = sumOfPrevTwo;
+            num1++;
         }
         return num2;
     }

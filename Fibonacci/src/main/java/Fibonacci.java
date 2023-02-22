@@ -26,6 +26,7 @@ public class Fibonacci {
             num1 = num2;
             num2 = sumOfPrevTwo;
         }
+        return num2;
     }
 
 }

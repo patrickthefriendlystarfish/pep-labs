@@ -24,6 +24,7 @@ public class Fibonacci {
             int sumOfPrevTwo = num1 + num2;
             num1 = num2;
             num2 = sumOfPrevTwo;
+            num1++;
        }
 
        return num2;

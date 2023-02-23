@@ -42,10 +42,10 @@
   :count_labs_total: 96
   :count_labs_passed: 0
   :count_tests_total: 361
-  :count_tests_passed: 0
+  :count_tests_passed: 1
 :progress_test:
   :count_tests_total: 361
-  :count_tests_passed: 0
+  :count_tests_passed: 1
   Start:
     :Week: 1
     :Order: 1
@@ -1047,10 +1047,10 @@
     :Order: 1
     :Type: challenge
     :count_tests: 3
-    :count_tests_passed: 0
+    :count_tests_passed: 1
     :tests:
       palindromeTest1: 0
-      palindromeTest2: 0
+      palindromeTest2: 1
       palindromeTest3: 0
   SubArray:
     :Week: 10

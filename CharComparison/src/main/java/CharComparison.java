@@ -28,6 +28,10 @@ public class CharComparison {
                     {
                         break;
                     }
+                    else
+                    {
+                        return 0;
+                    }
                 }
             }
 

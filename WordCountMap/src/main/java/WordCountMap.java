@@ -21,9 +21,16 @@ public class WordCountMap {
 
         for(int count = 0; count < dictionary.length; count++)
         {
-            
+            if(map.containsKey(dictionary[count]))
+            {
+                map.put(dictionary[count], map.get(dictionary[count]) + 1);
+            }
+            else
+            {
+                map.put(dictionary[count], counter);
+            }
         }
 
-        return null;
+        return map;
     }
 }

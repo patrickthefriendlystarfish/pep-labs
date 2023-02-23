@@ -14,29 +14,18 @@ public class Palindrome {
     public boolean pal(String str){
         char[] reversedLetters = new char[str.length()];
         String reversedString = "";
-        for(int count = str.length() - 1; count > 0; --count)
-        {
-            //System.out.println(str.charAt(count));
-            reversedLetters[count] = str.charAt(count);
-        }
-        for(int count = 0; count < 0; count++)
-        {
-            reversedString += reversedLetters[count];
-        }
+       for(int count = str.length() - 1; count > 0; count--)
+       {
+            reversedString += str.charAt(count);
+       }
 
-        if(reversedString.equals(str))
-        {
-            System.out.println("Original String: " + str);
-            System.out.println("ReversedString: " + reversedString);
-            System.out.println("Return true");
+       if(reversedString.equals(str))
+       {
             return true;
-        }
-        else
-        {
-            System.out.println("Original String:" + str);
-            System.out.println("ReversedString: " + reversedString);
-            System.out.println("Returning false");
-            return false;
-        }
+       }
+       else
+       {
+        return false;
+       }
     }
 }

@@ -25,6 +25,10 @@ public class InsertPosition {
             {
                 return count;
             }
+            else if(nums[count] > target && count == nums.length - 1)
+            {
+                return count + 1;
+            }
 
             /*if((nums[count] < target) && count == 3)
             {

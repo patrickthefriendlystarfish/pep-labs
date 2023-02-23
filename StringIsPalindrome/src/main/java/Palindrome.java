@@ -19,7 +19,7 @@ public class Palindrome {
             System.out.println(str.charAt(count));
             reversedLetters[count] = str.charAt(count);
         }
-        for(int count = 0; count < reversedLetters.length; count++)
+        for(int count = reversedLetters.length; count > 0; count--)
         {
             reversedString += reversedLetters[count];
         }

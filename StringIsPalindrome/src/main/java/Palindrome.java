@@ -16,10 +16,10 @@ public class Palindrome {
         String reversedString = "";
         for(int count = str.length() - 1; count >= 0; --count)
         {
-            System.out.println(str.charAt(count));
+            //System.out.println(str.charAt(count));
             reversedLetters[count] = str.charAt(count);
         }
-        for(int count = reversedLetters.length; count > 0; count--)
+        for(int count = reversedLetters.length - 1; count > 0; count--)
         {
             reversedString += reversedLetters[count];
         }

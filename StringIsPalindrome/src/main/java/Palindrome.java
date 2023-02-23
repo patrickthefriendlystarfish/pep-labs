@@ -27,10 +27,16 @@ public class Palindrome {
 
         if(reversedString.equals(str))
         {
+            System.out.println("Original String: " + str);
+            System.out.println("ReversedString: " + reversedString);
+            System.out.println("Return true");
             return true;
         }
         else
         {
+            System.out.println("Original String:" + str);
+            System.out.println("ReversedString: " + reversedString);
+            System.out.println("Returning false");
             return false;
         }
     }

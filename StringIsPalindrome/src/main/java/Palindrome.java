@@ -12,20 +12,24 @@ public class Palindrome {
      * @return true if str is a palindrome, false otherwise.
      */
     public boolean pal(String str){
-        char[] reversedLetters = new char[str.length()];
-        String reversedString = "";
-       for(int count = str.length(); count > 0; count--)
+       String reversedString = "";
+
+       for(int count = str.length() - 1; count > 0; count--)
        {
-            reversedString += str.charAt(count);
+          reversedString += str.charAt(count);
        }
 
        if(reversedString.equals(str))
        {
+            System.out.println("Original String: " + str);
+            System.out.println("Reversed String: " + reversedString);
             return true;
        }
        else
        {
-        return false;
+            System.out.println("Original String: " + str);
+            System.out.println("Reversed String: " + reversedString);
+            return false;
        }
     }
 }

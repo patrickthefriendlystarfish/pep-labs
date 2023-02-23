@@ -17,15 +17,13 @@ public class Palindrome {
         for(int count = str.length() - 1; count >= 0; count--)
         {
             reversedLetters[count] = str.charAt(count);
-
-
         }
-        for(int count 0; count < reversedLetters.length; count++)
+        for(int count = 0; count < reversedLetters.length; count++)
         {
             reversedString += reversedLetters[count];
         }
 
-        if(reversedString.equals(str))
+        if(reversedString.compareTo(str) == 0)
         {
             System.out.println("Original String: " + str);
             System.out.println("ReversedString: " + reversedString);

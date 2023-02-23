@@ -20,7 +20,17 @@ public class CharComparison {
         {
             identicalLetters[count] = a[count];
 
-            
+            if(count == b.length - 1)
+            {
+                for(int i = 0; i < identicalLetters.length; i++)
+                {
+                    if(i == identicalLetters.length - 1)
+                    {
+                        return 1;
+                    }
+                }
+            }
+
             
         }
         else if(a[count] < b[count])

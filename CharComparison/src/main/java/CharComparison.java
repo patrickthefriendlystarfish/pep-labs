@@ -45,6 +45,10 @@ public class CharComparison {
                 return -1;
             }
         }
+        else
+        {
+          continue;  
+        }
   
       }
 

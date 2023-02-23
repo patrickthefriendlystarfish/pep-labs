@@ -29,7 +29,7 @@ public class WordCountMap {
             {
                 map.put(dictionary[count], counter);
             }
-        }
+        }   
 
         return map;
     }

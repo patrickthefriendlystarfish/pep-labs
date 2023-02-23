@@ -29,6 +29,9 @@ public class InsertPosition {
             {
                 return count + 1;
             }
+            else{
+                return count + 1;
+            }
 
             /*if((nums[count] < target) && count == 3)
             {

@@ -20,7 +20,7 @@ public class Palindrome {
 
 
         }
-        for(int count = 0; count <= reversedLetters.length - 1; count++)
+        for(int count = reversedLetters.length - 1; count > 0; --count)
         {
             reversedString += reversedLetters[count];
         }

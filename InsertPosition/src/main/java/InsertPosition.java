@@ -16,8 +16,10 @@ public class InsertPosition {
      */
     public int searchInsert(int[] nums, int target) {
         
+        System.out.println("Target: " + target);
         for(int count = 0; count < nums.length; count++)
         {
+            System.out.println("currentIndex: " + nums[count]);
             
             if(nums[count] > target)
             {

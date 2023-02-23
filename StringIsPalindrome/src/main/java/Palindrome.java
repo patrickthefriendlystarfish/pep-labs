@@ -16,6 +16,7 @@ public class Palindrome {
         String reversedString = "";
         for(int count = str.length() - 1; count >= 0; --count)
         {
+            System.out.println(str.charAt(count));
             reversedLetters[count] = str.charAt(count);
         }
         for(int count = 0; count < reversedLetters.length; count++)

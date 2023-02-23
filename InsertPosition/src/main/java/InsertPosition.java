@@ -24,10 +24,10 @@ public class InsertPosition {
                 return count;
             }
 
-            if((nums[count] < target) && count == 3)
+            /*if((nums[count] < target) && count == 3)
             {
                 return count + 1;
-            }
+            }*/
 
             
             

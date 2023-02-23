@@ -17,21 +17,19 @@ public class InsertPosition {
     public int searchInsert(int[] nums, int target) {
         
         System.out.println("Target: " + target);
-        for(int count = 0; count < nums.length; count++)
+        for(int count = 1; count < nums.length; count++)
         {
             System.out.println("currentIndex: " + nums[count]);
             
             if(nums[count] > target)
             {
-                return count;
+                return count - 1;
             }
             else if(nums[count] > target && count == nums.length - 1)
             {
                 return count + 1;
             }
-            else{
-                return count + 1;
-            }
+           
 
             /*if((nums[count] < target) && count == 3)
             {

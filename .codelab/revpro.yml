@@ -42,10 +42,10 @@
   :count_labs_total: 96
   :count_labs_passed: 0
   :count_tests_total: 361
-  :count_tests_passed: 4
+  :count_tests_passed: 2
 :progress_test:
   :count_tests_total: 361
-  :count_tests_passed: 4
+  :count_tests_passed: 2
   Start:
     :Week: 1
     :Order: 1
@@ -989,13 +989,13 @@
     :Order: 8
     :Type: challenge
     :count_tests: 5
-    :count_tests_passed: 4
+    :count_tests_passed: 2
     :tests:
-      testSearchInsert1: 1
+      testSearchInsert1: 0
       testSearchInsert2: 1
       testSearchInsert3: 0
       testSearchInsert4: 1
-      testSearchInsert5: 1
+      testSearchInsert5: 0
   ReverseAString:
     :Week: 9
     :Order: 1

@@ -14,7 +14,7 @@ public class Palindrome {
     public boolean pal(String str){
         char[] reversedLetters = new char[str.length()];
         String reversedString = "";
-        for(int count = str.length() - 1; count >=0; count--)
+        for(int count = str.length() - 1; count >= 0; count--)
         {
             reversedLetters[count] = str.charAt(count);
 

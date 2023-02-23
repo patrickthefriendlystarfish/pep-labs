@@ -24,9 +24,9 @@ public class CharComparison {
             {
                 for(int i = 0; i < identicalLetters.length; i++)
                 {
-                    if(i == identicalLetters.length - 1)
+                    if(identicalLetters[count] != b[count])
                     {
-                        return 1;
+                        break;
                     }
                 }
             }
